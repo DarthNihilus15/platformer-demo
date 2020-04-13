@@ -151,10 +151,67 @@ b b b b b b b 1 1 b b b b b b b
 b b b b b b b 1 1 b b b b b b b 
 b b b b b b b 1 1 b b b b b b b 
 `
+    //% blockIdentity=images._tile
+    export const tile10 = img`
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+`
 }
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile9, function (sprite, location) {
-    game.over(true, effects.confetti)
+    startLevelTwo()
 })
+function startLevelTwo () {
+    if (true) {
+        Viper_Legion_Soldier.destroy()
+    }
+    tiles.setTilemap(tiles.createTilemap(
+            hex`3c0019001a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a151a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161616161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a16161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1616161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161616161616161616161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1616161616161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a16161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a161616161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a16161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a16161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a16161a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a16161a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a16161616161616161a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1f1a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1b161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616`,
+            img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 2 2 2 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 2 . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 2 2 . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . . . 2 2 . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . 2 . . . . . . . . . . . . 2 2 2 2 . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 2 2 . . . . . . . . . . . . . . . . . . . . . . . 2 2 . . . . . . . . . 
+. . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 2 . . . . . . . . 2 . . . . . . . . . . . 
+. . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 2 . . . . . . . . 2 . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+`,
+            [myTiles.tile0,sprites.castle.tilePath1,sprites.castle.tilePath5,sprites.castle.tilePath2,sprites.castle.tilePath7,sprites.castle.tilePath3,sprites.castle.tilePath4,sprites.castle.tilePath6,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,sprites.castle.tileGrass2,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.castle.tileDarkGrass1,sprites.builtin.forestTiles5,sprites.builtin.forestTiles2,sprites.builtin.forestTiles28,sprites.builtin.forestTiles20,sprites.castle.tileGrass3,myTiles.tile2,sprites.dungeon.stairLarge,myTiles.tile3,sprites.dungeon.floorDark2,sprites.dungeon.floorDark0,myTiles.tile5,myTiles.tile6,myTiles.tile7,sprites.dungeon.darkGroundCenter,myTiles.tile8,myTiles.tile9,myTiles.tile10,sprites.dungeon.doorLockedEast],
+            TileScale.Sixteen
+        ))
+    tiles.placeOnRandomTile(Skull_Trooper, sprites.dungeon.doorLockedEast)
+}
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(img`
 f f f 
@@ -195,7 +252,7 @@ function startGame () {
 2 . . . . . . . . . . . . . . . . . . . . . . . 2 2 2 . . 2 . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . 2 
 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
 `,
-            [myTiles.tile0,sprites.castle.tilePath1,sprites.castle.tilePath5,sprites.castle.tilePath2,sprites.castle.tilePath7,sprites.castle.tilePath3,sprites.castle.tilePath4,sprites.castle.tilePath6,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,sprites.castle.tileGrass2,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.castle.tileDarkGrass1,sprites.builtin.forestTiles5,sprites.builtin.forestTiles2,sprites.builtin.forestTiles28,sprites.builtin.forestTiles20,sprites.castle.tileGrass3,myTiles.tile2,sprites.dungeon.stairLarge,myTiles.tile3,sprites.dungeon.floorDark2,sprites.dungeon.floorDark0,myTiles.tile5,myTiles.tile6,myTiles.tile7,sprites.dungeon.darkGroundCenter,myTiles.tile8,myTiles.tile9],
+            [myTiles.tile0,sprites.castle.tilePath1,sprites.castle.tilePath5,sprites.castle.tilePath2,sprites.castle.tilePath7,sprites.castle.tilePath3,sprites.castle.tilePath4,sprites.castle.tilePath6,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,sprites.castle.tileGrass2,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.castle.tileDarkGrass1,sprites.builtin.forestTiles5,sprites.builtin.forestTiles2,sprites.builtin.forestTiles28,sprites.builtin.forestTiles20,sprites.castle.tileGrass3,myTiles.tile2,sprites.dungeon.stairLarge,myTiles.tile3,sprites.dungeon.floorDark2,sprites.dungeon.floorDark0,myTiles.tile5,myTiles.tile6,myTiles.tile7,sprites.dungeon.darkGroundCenter,myTiles.tile8,myTiles.tile9,myTiles.tile10],
             TileScale.Sixteen
         ))
     Skull_Trooper = sprites.create(img`
@@ -248,19 +305,18 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(img`
-. f . 
-f f f 
-f f f 
-f f f 
-f f f 
-f f f 
+. 2 . 
+2 2 2 
+2 2 2 
+2 2 2 
+2 2 2 
+2 2 2 
 `, Skull_Trooper, 0, -100)
 })
-let Viper_Legion_Soldier: Sprite = null
-let Aliens: Sprite = null
 let numJumps = 0
-let Skull_Trooper: Sprite = null
 let projectile: Sprite = null
+let Skull_Trooper: Sprite = null
+let Viper_Legion_Soldier: Sprite = null
 scene.setBackgroundImage(img`
 f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
 f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
@@ -386,28 +442,6 @@ f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
 game.showLongText("get as many kills as possible or try to get to the objective.", DialogLayout.Bottom)
 game.showLongText("use a and d or left and right arrow keys to move. use z to jump and x to shoot.", DialogLayout.Bottom)
 startGame()
-game.onUpdateInterval(10000, function () {
-    Aliens = sprites.create(img`
-. . . . . 2 . . . . . . 2 . . . 
-. . . . 2 . . . . . . 2 . . . . 
-. . . . . 2 . 7 7 . . . 2 . . . 
-. . . . 2 . 7 7 7 7 . 2 . . . . 
-. . . . 2 7 7 7 7 7 7 2 . . . . 
-. . . . 7 7 7 7 7 7 7 7 . . . . 
-. . . 7 7 f f 7 7 f f 7 7 . . . 
-. . . 7 7 f f 7 7 f f 7 7 . . . 
-. . 7 7 7 7 7 7 7 7 7 7 7 7 . . 
-. . 7 7 7 7 7 7 7 7 7 7 7 7 . . 
-. . . 7 7 7 7 7 7 7 7 7 7 . . . 
-. . . . 7 7 7 7 7 7 7 7 . . . . 
-. . . . 7 7 7 7 7 7 7 7 . . . . 
-. . . . 7 7 . . . . 7 7 . . . . 
-. . . . 7 7 . . . . 7 7 . . . . 
-. . . . 7 7 . . . . 7 7 . . . . 
-`, SpriteKind.Enemy)
-    Aliens.follow(Skull_Trooper)
-    tiles.placeOnRandomTile(Aliens, myTiles.tile7)
-})
 game.onUpdateInterval(5000, function () {
     Viper_Legion_Soldier = sprites.create(img`
 . . . . c c c c c c . . . . . . 
